@@ -832,7 +832,7 @@ function initTimelineProofs() {
 
     async function findAllMedia(id) {
         const found = [];
-        const extensions = ['mp4', 'jpg', 'png', 'jpeg', 'gif'];
+        const extensions = ['mp4', 'jpg', 'png', 'jpeg', 'gif', 'webp'];
         // Check base ID (e.g., 1.jpg) and suffixes (e.g., 1a.jpg, 1b.jpg)
         const suffixes = ['', 'a', 'b', 'c', 'd', 'e']; 
 
