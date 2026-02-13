@@ -412,6 +412,24 @@ h1, h2, h3 {
     font-weight: 400;
 }
 
+.gpt-disclaimer {
+    display: block;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
+.gpt-disclaimer-btn {
+    background: none;
+    border: none;
+    color: var(--cute-accent);
+    cursor: pointer;
+    font-size: 1.2rem;
+    vertical-align: middle;
+    padding: 0 4px;
+}
+
 .timeline {
     position: relative;
     display: flex;
