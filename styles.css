@@ -1285,3 +1285,8 @@ body.shake-intense {
     height: auto;
     display: block;
 }
+
+.polaroid-flipped-gif {
+    transform: scale(1.09) translateX(25%) translateY(10%);
+    transform-origin: center;
+}

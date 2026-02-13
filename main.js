@@ -64,6 +64,47 @@ function initSite() {
         });
     }
 
+    /* ==============================
+       Polaroid Flip Logic
+    ============================== */
+    const polaroid = document.querySelector('img[src*="polaroid.png"]');
+    if (polaroid) {
+        const container = document.createElement('div');
+        container.className = polaroid.className;
+        container.classList.add('flowerboy-flip-container');
+        
+        const inner = document.createElement('div');
+        inner.className = 'flowerboy-flip-inner';
+        
+        const front = document.createElement('div');
+        front.className = 'flowerboy-flip-front';
+        
+        const back = document.createElement('div');
+        back.className = 'flowerboy-flip-back';
+        
+        const pngSrc = polaroid.src;
+        const backImg = document.createElement('img');
+        backImg.src = pngSrc;
+        backImg.alt = 'Polaroid Static';
+        
+        // Swap: GIF goes to front (original element), PNG goes to back
+        polaroid.src = pngSrc.replace('polaroid.png', 'polaroid.gif');
+        
+        polaroid.parentNode.insertBefore(container, polaroid);
+        container.appendChild(inner);
+        inner.appendChild(front);
+        inner.appendChild(back);
+        
+        front.appendChild(polaroid);
+        back.appendChild(backImg);
+        
+        polaroid.className = ''; 
+        polaroid.classList.add('polaroid-flipped-gif');
+        
+        container.addEventListener('click', () => {
+            container.classList.toggle('flipped');
+        });
+    }
 
     /* ==============================
        Valentine Question Logic
