@@ -849,6 +849,7 @@ function initTimelineProofs() {
     });
 
     function showLoading() {
+        popup.scrollTop = 0;
         popup.innerHTML = `
             <div class="heart-loader">
                 <div class="heart-loader-piece"></div>
@@ -869,6 +870,7 @@ function initTimelineProofs() {
     }
 
     function showMedia(mediaList) {
+        popup.scrollTop = 0;
         popup.innerHTML = '';
         
         mediaList.forEach(media => {
