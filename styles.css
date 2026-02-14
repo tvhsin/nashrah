@@ -620,7 +620,7 @@ h1, h2, h3 {
 .heart-loader {
     width: 140px;
     height: 100px;
-    margin: auto;
+    margin: 50px auto;
     position: relative;
     transform: scale(0.8); /* Scale slightly to fit popup nicely */
 }
