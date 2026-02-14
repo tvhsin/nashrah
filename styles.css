@@ -616,19 +616,59 @@ h1, h2, h3 {
     border-radius: 8px;
 }
 
-/* Timeline Proof Loader */
-.timeline-proof-loader {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid var(--cute-accent);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
+/* Timeline Proof Loader - Heart Animation */
+.heart-loader {
+    width: 140px;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    transform: scale(0.8); /* Scale slightly to fit popup nicely */
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.heart-loader-piece {
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--cute-accent);
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+}
+
+.heart-loader-piece:nth-child(1) { left: 0; animation-name: heart-piece-1; animation-delay: 0s; }
+.heart-loader-piece:nth-child(2) { left: 16px; animation-name: heart-piece-2; animation-delay: 0.15s; }
+.heart-loader-piece:nth-child(3) { left: 32px; animation-name: heart-piece-3; animation-delay: 0.30s; }
+.heart-loader-piece:nth-child(4) { left: 48px; animation-name: heart-piece-4; animation-delay: 0.45s; }
+.heart-loader-piece:nth-child(5) { left: 64px; animation-name: heart-piece-5; animation-delay: 0.60s; }
+.heart-loader-piece:nth-child(6) { left: 80px; animation-name: heart-piece-4; animation-delay: 0.45s; }
+.heart-loader-piece:nth-child(7) { left: 96px; animation-name: heart-piece-3; animation-delay: 0.30s; }
+.heart-loader-piece:nth-child(8) { left: 112px; animation-name: heart-piece-2; animation-delay: 0.15s; }
+.heart-loader-piece:nth-child(9) { left: 128px; animation-name: heart-piece-1; animation-delay: 0s; }
+
+@keyframes heart-piece-5 {
+    0%, 10%, 90%, 100% { height: 10px; top: -5px; }
+    45%, 55% { height: 94px; top: -23px; }
+}
+
+@keyframes heart-piece-4 {
+    0%, 10%, 90%, 100% { height: 10px; top: -5px; }
+    45%, 55% { height: 90px; top: -31px; }
+}
+
+@keyframes heart-piece-3 {
+    0%, 10%, 90%, 100% { height: 10px; top: -5px; }
+    45%, 55% { height: 80px; top: -37px; }
+}
+
+@keyframes heart-piece-2 {
+    0%, 10%, 90%, 100% { height: 10px; top: -5px; }
+    45%, 55% { height: 60px; top: -31px; }
+}
+
+@keyframes heart-piece-1 {
+    0%, 10%, 90%, 100% { height: 10px; top: -5px; }
+    45%, 55% { height: 30px; top: -15px; }
 }
 
 /* Playlist Section */

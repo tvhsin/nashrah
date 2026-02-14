@@ -849,7 +849,18 @@ function initTimelineProofs() {
     });
 
     function showLoading() {
-        popup.innerHTML = '<div class="timeline-proof-loader"></div>';
+        popup.innerHTML = `
+            <div class="heart-loader">
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+                <div class="heart-loader-piece"></div>
+            </div>`;
         requestAnimationFrame(() => {
             popup.style.opacity = '1';
             popup.style.transform = 'translate(-50%, -50%) scale(1)';
