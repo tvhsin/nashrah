@@ -828,11 +828,15 @@ function initTimelineProofs() {
                     return;
                 }
 
+                showLoading();
+
                 findAllMedia(entryNumber).then(results => {
                     if (popup.dataset.hovered !== 'true') return;
                     if (results && results.length > 0) {
                         cachedMedia = results;
                         showMedia(cachedMedia);
+                    } else {
+                        popup.innerHTML = '<div style="padding:10px; color: var(--cute-text);">No media found 😢</div>';
                     }
                 });
             });
@@ -843,6 +847,15 @@ function initTimelineProofs() {
             });
         }
     });
+
+    function showLoading() {
+        popup.innerHTML = '<div class="timeline-proof-loader"></div>';
+        requestAnimationFrame(() => {
+            popup.style.opacity = '1';
+            popup.style.transform = 'translate(-50%, -50%) scale(1)';
+            popup.style.pointerEvents = 'all';
+        });
+    }
 
     function showMedia(mediaList) {
         popup.innerHTML = '';
