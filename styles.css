@@ -632,18 +632,18 @@ h1, h2, h3 {
     position: absolute;
     border-radius: 5px;
     background: var(--cute-accent);
-    animation-duration: 3.2s;
+    animation-duration: 0.6s;
     animation-iteration-count: infinite;
 }
 
 .heart-loader-piece:nth-child(1) { left: 0; animation-name: heart-piece-1; animation-delay: 0s; }
-.heart-loader-piece:nth-child(2) { left: 16px; animation-name: heart-piece-2; animation-delay: 0.15s; }
-.heart-loader-piece:nth-child(3) { left: 32px; animation-name: heart-piece-3; animation-delay: 0.30s; }
-.heart-loader-piece:nth-child(4) { left: 48px; animation-name: heart-piece-4; animation-delay: 0.45s; }
-.heart-loader-piece:nth-child(5) { left: 64px; animation-name: heart-piece-5; animation-delay: 0.60s; }
-.heart-loader-piece:nth-child(6) { left: 80px; animation-name: heart-piece-4; animation-delay: 0.45s; }
-.heart-loader-piece:nth-child(7) { left: 96px; animation-name: heart-piece-3; animation-delay: 0.30s; }
-.heart-loader-piece:nth-child(8) { left: 112px; animation-name: heart-piece-2; animation-delay: 0.15s; }
+.heart-loader-piece:nth-child(2) { left: 16px; animation-name: heart-piece-2; animation-delay: 0.03s; }
+.heart-loader-piece:nth-child(3) { left: 32px; animation-name: heart-piece-3; animation-delay: 0.06s; }
+.heart-loader-piece:nth-child(4) { left: 48px; animation-name: heart-piece-4; animation-delay: 0.09s; }
+.heart-loader-piece:nth-child(5) { left: 64px; animation-name: heart-piece-5; animation-delay: 0.12s; }
+.heart-loader-piece:nth-child(6) { left: 80px; animation-name: heart-piece-4; animation-delay: 0.09s; }
+.heart-loader-piece:nth-child(7) { left: 96px; animation-name: heart-piece-3; animation-delay: 0.06s; }
+.heart-loader-piece:nth-child(8) { left: 112px; animation-name: heart-piece-2; animation-delay: 0.03s; }
 .heart-loader-piece:nth-child(9) { left: 128px; animation-name: heart-piece-1; animation-delay: 0s; }
 
 @keyframes heart-piece-5 {
