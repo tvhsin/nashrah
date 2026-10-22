@@ -1,0 +1,68 @@
+<!-- Quiz Section -->
+<section class="quiz-section">
+    <h2 class="section-title">How Well Do You Know Us?</h2>
+    <p class="section-subtitle">Let's find out 😌</p>
+    <div class="quiz-container">
+        <div id="quiz-questions">
+            <div class="quiz-question active" data-question="1">
+                <h3 class="question-text">Where did we first really talk properly?</h3>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-answer="A">Over text messages that turned into paragraphs</div>
+                    <div class="quiz-option" data-answer="B">On a voice call that lasted hours</div>
+                    <div class="quiz-option" data-answer="C">In person at a coffee shop</div>
+                    <div class="quiz-option" data-answer="D">Through comments on each other's posts</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-question="2">
+                <h3 class="question-text">Who caught feelings first?</h3>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-answer="A">Me (definitely me)</div>
+                    <div class="quiz-option" data-answer="B">You did, admit it</div>
+                    <div class="quiz-option" data-answer="C">We both did at the same time somehow</div>
+                    <div class="quiz-option" data-answer="D">Still figuring that out</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-question="3">
+                <h3 class="question-text">What's my favorite thing about you?</h3>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-answer="A">Your sense of humor</div>
+                    <div class="quiz-option" data-answer="B">How you make me feel safe</div>
+                    <div class="quiz-option" data-answer="C">Everything (I can't choose)</div>
+                    <div class="quiz-option" data-answer="D">The way you understand me without words</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-question="4">
+                <h3 class="question-text">What's our go-to activity when we're together?</h3>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-answer="A">Talking about everything until 3am</div>
+                    <div class="quiz-option" data-answer="B">Watching shows and movies</div>
+                    <div class="quiz-option" data-answer="C">Going on spontaneous adventures</div>
+                    <div class="quiz-option" data-answer="D">Just existing in the same space, peacefully</div>
+                </div>
+            </div>
+
+            <div class="quiz-question" data-question="5">
+                <h3 class="question-text">Complete the sentence: "You make me feel..."</h3>
+                <div class="quiz-options">
+                    <div class="quiz-option" data-answer="A">Like I'm exactly where I'm supposed to be</div>
+                    <div class="quiz-option" data-answer="B">Happier than I knew was possible</div>
+                    <div class="quiz-option" data-answer="C">Understood in ways I never have been before</div>
+                    <div class="quiz-option" data-answer="D">All of the above</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quiz-result">
+            <div class="score-display">Score: <span id="score">0</span>/5</div>
+            <p class="result-message">Score doesn't matter.<br>If it's you, you already win ❤️</p>
+            <button class="btn" onclick="resetQuiz()">Take Again</button>
+        </div>
+
+        <div class="quiz-nav">
+            <button class="btn" id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+</section>
